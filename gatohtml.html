@@ -1,0 +1,87 @@
+<!-- Pagina Juego de Gato -->
+<!-- CESAR BAUTISTA CASTILLA -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/GatoCSS.css">
+    <link rel="stylesheet" href="CSS/nav.css">
+    <script src="JS/GatoJS.js" defer></script>
+    <link rel="icon" href="Imagenes/usuario.png">
+    <title>Cesar Bautista</title>
+</head>
+<body>
+
+    <!-- Barra de navegacion -->
+    <nav>
+        <!-- Div para el logo y nombre -->
+        <div class="nombre">
+            <img src="IMAGENES/usuario.png" alt="Logo" id="Logo">
+            <h1>Cesar Bautista</h1>
+        </div>
+        
+        <!-- Enlaces -->
+        <ul id="navegacion">
+            <a href="index.html" >Inicio</a>
+            <a href="MemoramaHTML.html">Memorama</a>
+            <a href="GatoHTML.html">Gato</a>
+        </ul>        
+    </nav>
+
+    <!-- Main principal del juego -->
+    <main>
+        <!-- Primera seccion para el tablero del gato -->
+        <section class="section1">
+            <h1>GATO</h1>
+            <!-- Declaramos todos los botones -->
+            <table id="tabla">
+                <tr>
+                    <td><button id="0" onclick="destapar(0)"></button></td> <!-- Destapar es una funcion que luego se ejecutara en JS -->
+                    <td><button id="1" onclick="destapar(1)"></button></td>
+                    <td><button id="2" onclick="destapar(2)"></button></td>
+                </tr>
+                <tr>
+                    <td><button id="3" onclick="destapar(3)"></button></td>
+                    <td><button id="4" onclick="destapar(4)"></button></td>
+                    <td><button id="5" onclick="destapar(5)"></button></td>
+                </tr>
+                <tr>
+                    <td><button id="6" onclick="destapar(6)"></button></td>
+                    <td><button id="7" onclick="destapar(7)"></button></td>
+                    <td><button id="8" onclick="destapar(8)"></button></td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- La segunda seccion mostrara las estadisticas de juego -->
+        <section class="section2">
+            <!-- Dira el turno -->
+            <div class="estadisticas" id="opciones">
+                <h2 id="pregunta">Turno de: </h2>
+                <div class="fig" id="figura">
+                    <img src="Imagenes/equis.png" alt="equis">
+                </div>
+            </div>
+            <!-- Mostrara el marcador -->
+            <div class="estadisticas" id="ganadas">
+                <h2>Victorias</h2>
+                <div class="fig">
+                    <img src="Imagenes/equis.png" alt="equis">
+                    <img src="Imagenes/circulo.png" alt="circulo">
+                </div>
+                <div class="valores">
+                    <p id="X">0</p>
+                    <p id="O">0</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>Pagina creada por Cesar Bautista Castilla.</p>
+    </footer>
+</body>
+</html>

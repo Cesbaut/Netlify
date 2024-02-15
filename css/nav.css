@@ -1,0 +1,96 @@
+/* ESTILOS BARRA DE NAVEGACION Y FOOTER */
+/* CESAR BAUTISTA CASTILLA */
+
+/* Importamos letras de google */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/* Navegacion */
+nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    gap: 50px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    padding: 13px 0;
+}
+.nombre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 13px;
+}
+#Logo{
+    width: 80px;
+    height: 80px;
+}
+.nombre h1{
+    padding-top: 13px;
+    align-self: center;
+    font-size: 30px;
+}
+#navegacion{
+    display: flex;
+    flex-basis: 80%;
+    justify-content: space-evenly;
+    padding: 0 0 13px 49px;
+}
+#navegacion a{
+    align-self: flex-end;
+    padding: 8px;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    transition: font-size 360ms;
+}
+#navegacion a:hover{
+    background-color: black;
+    color: white;
+    font-size: 25px;
+}
+
+
+/* footer */
+footer{
+    display: flex;
+    background-color: rgb(230, 230, 230);
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+
+/* MEDIA-QUERY */
+@media screen and (max-width:576px){
+    nav{
+        gap: 8px;
+        padding: 0;
+        flex-direction: column;
+    }
+    #navegacion{
+        padding: 0;
+        flex-basis: 100%;
+        justify-content: space-evenly;
+        padding: 0px;
+    }
+    #navegacion a{
+        align-self: center;
+        padding: 10px;
+    }
+    .nombre h1{
+        padding-right: 30px;
+    }
+}
+@media screen and (min-width: 1400px){
+    #navegacion a{
+        font-size: 1.9em;
+    }
+}

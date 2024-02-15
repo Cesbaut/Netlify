@@ -1,0 +1,222 @@
+/* ESTILOS PARA MEMORAMA */
+/* CESAR BAUTISTA CASTILLA */
+
+/* Importamos letras de goggle */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+/* Estilos generales */
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+main{
+    background-color: rgb(243, 208, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    gap: 69px;
+}
+
+/* Seccion Tablero Gato */
+.section1{
+    background-color: rgba(253, 255, 129, 0.829);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.section1 h1{
+    text-align: center;
+    font-size: 2.3em;
+    margin-bottom: 9px;
+}
+button{
+    background-color: rgba(230, 238, 238, 0.527);
+    height: 116px;
+    width: 116px;
+    font-size: 60px;
+    font-weight: bold;
+    border: 1px solid gray;
+    border-radius: 9px;
+}
+button:hover{
+    cursor: pointer;
+}
+
+/* Seccion de estadisticas */
+.section2{
+    background-color:  rgba(253, 255, 129, 0.829);
+    border-radius: 9px;
+    height: 400px;
+    width: 269px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.estadisticas{
+    height: 105px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+h2{
+    text-align: center;
+    font-size: 1.5em;
+}
+#pregunta{
+    text-align: center;
+    font-size: 1.5em;
+}
+
+#ganadas{
+    padding-bottom: 50px;
+    width: 80%;
+    align-self: center;
+}
+.fig{
+    display: flex;
+    justify-content: space-around;
+}
+.valores{
+    display: flex;
+    justify-content: space-around;
+}
+.valores p{
+    font-size: 1.8em;
+}
+img{
+    width: 60px;
+}
+
+/* MEDIA-QUERY */
+@media screen and (max-width:324px){
+    main{
+        flex-direction: column;
+        height: 90%;
+        gap: 9px;
+        padding: 20px 0;
+    }
+    .section1{
+        border-radius: 8px;
+        margin: 10px;
+    }
+    button{
+        height: 60px;
+        width: 60px;
+    }
+    .section2{
+        height: 300px;
+        width: 80%;
+    }
+    .estadisticas{
+        flex-direction: column;
+    }   
+}
+@media screen and (min-width: 325px) and (max-width: 363px){
+    main{
+        flex-direction: column;
+        height: 90%;
+        gap: 9px;
+        padding: 20px 0;
+    }
+    .section1{
+        border-radius: 8px;
+        margin: 10px;
+    }
+    button{
+        height: 80px;
+        width: 80px;
+    }
+    .section2{
+        height: 200px;
+        width: 80%;
+        flex-direction: row;
+    }
+    .estadisticas{
+        flex-direction: column;
+        padding: 9px 0 9px 13px;
+    }   
+}
+@media screen and (min-width: 363px) and (max-width: 453px){
+    main{
+        flex-direction: column;
+        height: 75vh;
+        gap: 9px;
+        padding: 20px 0;
+    }
+    .section1{
+        border-radius: 8px;
+        margin: 10px;
+    }
+    button{
+        height: 93px;
+        width: 93px;
+    }
+    .section2{
+        height: 200px;
+        width: 80%;
+        flex-direction: row;
+    }
+    .estadisticas{
+        flex-direction: column;
+        padding: 9px 0 9px 13px;
+    }   
+}
+@media screen and (min-width: 454px) and (max-width: 587px){
+    main{
+        flex-direction: column;
+        height: 90%;
+        gap: 9px;
+        padding: 20px 0;
+    }
+    .section1{
+        border-radius: 8px;
+        margin: 10px;
+    }
+    .section2{
+        height: 200px;
+        width: 60%;
+        flex-direction: row;
+    }
+    .estadisticas{
+        flex-direction: column;
+        padding: 9px 0 9px 13px; 
+    } 
+}
+@media screen and (min-width: 587px) and (max-width: 700px){
+    main{
+        height: 70vh;
+        gap: 9px;
+        padding: 20px 0;
+    }
+    .section1{
+        border-radius: 8px;
+        margin: 10px;
+    }
+    button{
+        height: 93px;
+        width: 93px;
+    }
+    .section2{
+        width: 180px;
+        height: 300px;;
+    }
+    .estadisticas{
+        flex-direction: column;
+        padding: 9px 0 9px 13px;
+    }   
+}
+@media screen and (min-width: 1400px){
+    main{
+        height: 90vh;
+    }
+    button{
+        height: 136px;
+        width: 136px;
+    }
+}

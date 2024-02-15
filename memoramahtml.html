@@ -1,0 +1,80 @@
+<!-- Pagina Juego de Memorama -->
+<!-- CESAR BAUTISTA CASTILLA -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/MemoramaCSS.css">
+    <link rel="stylesheet" href="CSS/nav.css">
+    <script src="JS/MemoramaJS.js" defer></script>
+    <link rel="icon" href="Imagenes/usuario.png">
+    <title>Cesar Bautista</title>
+</head>
+<body>
+    <!-- Barra de navegacion -->
+    <nav>
+        <!-- Div para el logo y nombre -->
+        <div class="nombre">
+            <img src="IMAGENES/usuario.png" alt="Logo" id="Logo">
+            <h1>Cesar Bautista</h1>
+        </div>
+        
+        <!-- Enlaces -->
+        <ul id="navegacion">
+            <a href="index.html" >Inicio</a>
+            <a href="MemoramaHTML.html">Memorama</a>
+            <a href="GatoHTML.html">Gato</a>
+        </ul>        
+    </nav>
+
+    <!-- Seccion del juego -->
+    <main>
+        <!-- Tablero de juego -->
+        <section class="section1">
+            <h1>Juego de Memoria</h1>
+            <!-- Declaramos todos los botones -->
+            <table>
+                <tr>
+                    <td><button id="0" onclick="destapar(0)"></button></td> <!-- Destapar es una funcion que luego se ejecutara en JS -->
+                    <td><button id="1" onclick="destapar(1)"></button></td>
+                    <td><button id="2" onclick="destapar(2)"></button></td>
+                    <td><button id="3" onclick="destapar(3)"></button></td>
+                </tr>
+                <tr>
+                    <td><button id="4" onclick="destapar(4)"></button></td>
+                    <td><button id="5" onclick="destapar(5)"></button></td>
+                    <td><button id="6" onclick="destapar(6)"></button></td>
+                    <td><button id="7" onclick="destapar(7)"></button></td>
+                </tr>
+                <tr>
+                    <td><button id="8" onclick="destapar(8)"></button></td>
+                    <td><button id="9" onclick="destapar(9)"></button></td>
+                    <td><button id="10" onclick="destapar(10)"></button></td>
+                    <td><button id="11" onclick="destapar(11)"></button></td>
+                </tr>
+                <tr>
+                    <td><button id="12" onclick="destapar(12)"></button></td>
+                    <td><button id="13" onclick="destapar(13)"></button></td>
+                    <td><button id="14" onclick="destapar(14)"></button></td>
+                    <td><button id="15" onclick="destapar(15)"></button></td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- La segunda seccion mostrara las estadisticas de juego -->
+        <section class="section2">
+            <h2 class="estadisticas" id="aciertos">Aciertos: 0</h2> 
+            <h2 class="estadisticas" id="t-restante">Tiempo: 30 segundos</h2>
+            <h2 class="estadisticas" id="movimientos">Movimientos: 0</h2>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>Pagina creada por Cesar Bautista Castilla.</p>
+    </footer>
+    
+</body>
+</html>

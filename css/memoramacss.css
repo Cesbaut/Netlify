@@ -1,0 +1,168 @@
+/* ESTILOS PARA MEMORAMA */
+/* CESAR BAUTISTA CASTILLA */
+
+/* Importamos letras de goggle */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+
+/* Estilos generales */
+body{
+    background: rgba(158, 244, 255, 0.432);
+    font-family: 'Josefin Sans', sans-serif;
+}
+main{
+    width: 100%;
+    margin: 39px auto 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 36px;
+}
+
+/* Tablero Memorama */
+.section1{
+    background-color: rgba(207, 13, 255, 0.37);
+    padding: 0 16px 16px 16px;
+    border-radius: 9px;
+}
+.section1 h1{
+    text-align: center;
+    padding: 16px 0;
+}
+button{
+    border: 1px solid rgb(36, 31, 31);
+    background-color: rgba(230, 238, 238, 0.527);
+    border-radius: 9px;
+    height: 100px;
+    width: 100px;
+    font-size: 40px;
+    font-weight: bold;
+}
+button:hover{
+    cursor: pointer;
+}
+
+/* Estadisticas de juego */
+.section2{
+    border: 1px solid;
+    padding: 0 20px;
+    background-color:  rgba(207, 13, 255, 0.37);
+    width: 196px;
+    height: 400px;
+    border-radius: 9px;
+}
+.estadisticas{
+    display: flex;
+    align-items: center;
+    height: 105px;
+    border-radius: 8px;
+    margin-top: 13px;
+    padding: 8px 20px;
+    box-sizing: border-box;
+}
+/* Ajuste de imagen */
+img{
+    width: 80%;
+}
+
+/* MEDIA-QUERY */
+@media screen and (max-width:280px){
+    main{
+        flex-direction: column;
+        gap: 13px;
+    }
+    button{
+        height: 60px;
+        width: 60px;
+    }
+    .section2{
+        padding: 0;
+        width: 72%;
+        height: 200px;
+    }
+    .estadisticas{
+        height: 20%;
+        border-radius: 9px;
+        margin-top: 6px;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (min-width: 281px) and (max-width: 453px){
+    main{
+        flex-direction: column;
+        gap: 13px;
+    }
+    button{
+        height: 72px;
+        width: 72px;
+    }
+    .section2{
+        padding: 0;
+        width: 72%;
+        height: 200px;
+    }
+    .estadisticas{
+        height: 20%;
+        border-radius: 9px;
+        margin-top: 6px;
+        margin-bottom: 30px;
+    }
+}
+@media screen and (min-width: 454px) and (max-width: 587px){
+    main{
+        flex-direction: column;
+        gap: 13px;
+    }
+    button{
+        height: 93px;
+        width: 93px;
+    }
+    .section2{
+        padding: 0;
+        width: 72%;
+        height: 200px;
+    }
+    .estadisticas{
+        height: 20%;
+        border-radius: 9px;
+        margin-top: 6px;
+        margin-bottom: 30px;
+    }
+}
+@media screen and (min-width: 587px) and (max-width: 700px){
+    .section1 h1{
+        font-size: 2.4em;
+    }
+    main{
+        flex-direction: column;
+        gap: 13px;
+    }
+    button{
+        height: 109px;
+        width: 109px;
+    }
+    .section2{
+        padding: 0;
+        width: 72%;
+        height: 200px;
+    }
+    .estadisticas{
+        height: 20%;
+        border-radius: 9px;
+        margin-top: 6px;
+        margin-bottom: 30px;
+    }
+}
+@media screen and (min-width: 1400px){
+    .section1 h1{
+        font-size: 2.4em;
+    }
+    main{
+        margin-top: 14px;
+    }
+    button{
+        height: 118px;
+        width: 118px;
+    }
+}
